@@ -1,0 +1,48 @@
+
+function main(){
+   
+   row1();
+   cornerRow1();
+   row2();
+   cornerRow2();
+   turnRight();
+   row1();
+   cornerRow1();
+   row2();
+   cornerRow2();
+   turnRight();
+   row1();
+}
+
+function row1(){
+   
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+  
+}
+
+function row2(){   
+   
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+}
+
+function cornerRow1(){
+    turnLeft();
+   move();
+   turnLeft(); 
+}
+
+function cornerRow2(){
+   turnRight();
+   move();
+}
